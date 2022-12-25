@@ -26,4 +26,87 @@ h2,
 h3 {
   color: hsl(0deg, 0%, 100%);
   font-family: "Raleway", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 78rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 64em) {
+  .container {
+    padding-left: 1.45rem;
+    padding-right: 1.45rem;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex-ai-c {
+  align-items: center;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+.grid-ai-c {
+  align-items: center;
+}
+
+.header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 40em) {
+  .header {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+.header__logo {
+  height: 1.415rem;
+}
+@media (min-width: 40em) {
+  .header__logo {
+    height: 3.025rem;
+  }
+}
+.header__logo img {
+  width: 4.75rem;
+}
+@media (min-width: 40em) {
+  .header__logo img {
+    width: 10.25rem;
+  }
+}
+.header__links a {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 0.825rem;
+  font-family: "Raleway", sans-serif;
+  transition: all 300ms ease-in-out;
+}
+@media (min-width: 40em) {
+  .header__links a {
+    font-size: 0.9375rem;
+  }
+}
+.header__links a:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.header__links a:not(:last-child) {
+  margin-right: 1rem;
+}
+@media (min-width: 40em) {
+  .header__links a:not(:last-child) {
+    margin-right: 3.15rem;
+  }
 }/*# sourceMappingURL=style.css.map */
