@@ -12,6 +12,8 @@ html {
 }
 
 body {
+  line-height: 1.5;
+  color: $lightGray;
   font-family: $openSans;
   background: $introBlue;
 }
@@ -33,9 +35,47 @@ h3 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
     padding-left: 1.45rem;
     padding-right: 1.45rem;
+  }
+}
+
+button,
+.button {
+  border: 0;
+  outline: 0;
+  color: $white;
+  font-weight: 600;
+  position: relative;
+  font-size: 0.85rem;
+  display: inline-block;
+  font-family: $raleway;
+  transition: $transition;
+  border-radius: 3.125rem;
+  padding: 0.85rem 5.25rem;
+  background: linear-gradient(90deg, $cyan 2%, $blue 100%);
+
+  @include breakpoint-up(medium) {
+    font-size: 0.95rem;
+    padding: 0.95rem 5.65rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 3.125rem;
+    transition: opacity 150ms ease-in-out;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:hover::before {
+    opacity: 1;
   }
 }
 

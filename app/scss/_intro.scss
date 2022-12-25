@@ -1,0 +1,51 @@
+.intro {
+  padding-top: 1.35rem;
+
+  @include breakpoint-up(medium) {
+    padding-top: 0;
+  }
+
+  &__content {
+    margin: 0 auto;
+    max-width: 45rem;
+    padding-left: 1.85rem;
+    padding-right: 1.85rem;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+
+    @include breakpoint-up(medium) {
+      padding-left: 1.45rem;
+      padding-right: 1.45rem;
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    text-align: center;
+
+    h1 {
+      font-size: 1.45rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 2.375rem;
+      }
+    }
+
+    p {
+      width: auto;
+      font-size: 0.875rem;
+      margin: 1rem auto 1.65rem;
+
+      @include breakpoint-up(medium) {
+        width: 85%;
+        font-size: 1.1565rem;
+        margin: 1.5rem auto 2rem;
+      }
+    }
+  }
+}
