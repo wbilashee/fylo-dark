@@ -1,0 +1,58 @@
+.features {
+  background: $mainBlue;
+  padding: 8rem 0;
+
+  .feature {
+    &__container {
+      max-width: 60rem;
+      grid-template-columns: 1fr;
+      gap: 5rem;
+
+      @include breakpoint-up(medium) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &__card {
+      text-align: center;
+
+      img {
+        width: 4rem;
+
+        @include breakpoint-up(medium) {
+          width: 5rem;
+        }
+      }
+
+      &:nth-child(2) {
+        img {
+          width: 3.35rem;
+
+          @include breakpoint-up(medium) {
+            width: 4rem;
+          }
+        }
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 1.125rem;
+        margin: 1rem 0 0.5rem;
+
+        @include breakpoint-up(medium) {
+          font-size: 1.15rem;
+        }
+      }
+
+      p {
+        width: auto;
+        margin: auto;
+        font-size: 0.875rem;
+
+        @include breakpoint-up(medium) {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
