@@ -59,7 +59,7 @@
 
     a {
       color: $white;
-      transition: all 300ms ease-in-out;
+      transition: $transition;
 
       &:not(:last-child) {
         margin-bottom: 1rem;
@@ -90,7 +90,7 @@
         align-items: center;
         justify-content: center;
         border: 1px solid $white;
-        transition: all 300ms ease-in-out;
+        transition: $transition;
 
         &:hover {
           color: $cyan;

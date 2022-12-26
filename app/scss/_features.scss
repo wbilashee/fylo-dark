@@ -1,6 +1,13 @@
 .features {
-  background: $mainBlue;
+  z-index: 1;
+  margin-top: 0;
   padding: 8rem 0;
+  position: relative;
+
+  @include breakpoint-up(medium) {
+    padding: 0 0 8rem;
+    margin-top: -2rem;
+  }
 
   .feature {
     &__container {

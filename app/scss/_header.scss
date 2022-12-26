@@ -1,6 +1,7 @@
 .header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  background: $introBlue;
 
   @include breakpoint-up(medium) {
     padding-top: 4.25rem;
