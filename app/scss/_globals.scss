@@ -46,20 +46,14 @@ button,
   border: 0;
   outline: 0;
   color: $white;
+  cursor: pointer;
   font-weight: 600;
   position: relative;
-  font-size: 0.85rem;
   display: inline-block;
   font-family: $raleway;
   transition: $transition;
   border-radius: 3.125rem;
-  padding: 0.85rem 5.25rem;
   background: linear-gradient(90deg, $cyan 2%, $blue 100%);
-
-  @include breakpoint-up(medium) {
-    font-size: 0.95rem;
-    padding: 0.95rem 5.65rem;
-  }
 
   &::before {
     content: "";

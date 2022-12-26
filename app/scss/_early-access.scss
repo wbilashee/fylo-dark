@@ -1,0 +1,79 @@
+.early-access {
+  position: relative;
+  background: $mainBlue;
+  padding: 0.5rem 1.25rem;
+
+  @include breakpoint-up(medium) {
+    padding: 3.25rem 0;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: $footerBlue;
+
+    @include breakpoint-up(medium) {
+      height: 45%;
+    }
+  }
+
+  &__content {
+    z-index: 2;
+    max-width: 50rem;
+    position: inherit;
+    text-align: center;
+    border-radius: 0.5rem;
+    background: $introBlue;
+    padding: 1.85rem 1.5rem 2.25rem;
+    box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25);
+
+    @include breakpoint-up(medium) {
+      padding: 2.5rem 4.5rem 2.25rem;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 1.125rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 1.875rem;
+      }
+    }
+
+    p {
+      margin: 1rem 0 2rem;
+      font-size: 0.825rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 0.85rem;
+      }
+    }
+
+    form {
+      grid-template-columns: 1fr;
+      gap: 1.5rem 1.75rem;
+
+      @include breakpoint-up(medium) {
+        grid-template-columns: 1fr auto;
+      }
+
+      input {
+        outline: 0;
+        font-family: inherit;
+        padding: 0.75rem 2rem;
+        border-radius: 3.125rem;
+        border: 1px solid $white;
+      }
+
+      .button {
+        font-size: 0.85rem;
+        padding: 0.875rem 1.75rem;
+      }
+    }
+  }
+}

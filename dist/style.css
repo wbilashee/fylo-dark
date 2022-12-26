@@ -48,22 +48,14 @@ button,
   border: 0;
   outline: 0;
   color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
   font-weight: 600;
   position: relative;
-  font-size: 0.85rem;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   transition: all 300ms ease-in-out;
   border-radius: 3.125rem;
-  padding: 0.85rem 5.25rem;
   background: linear-gradient(90deg, hsl(176deg, 68%, 64%) 2%, hsl(198deg, 60%, 50%) 100%);
-}
-@media (min-width: 40em) {
-  button,
-.button {
-    font-size: 0.95rem;
-    padding: 0.95rem 5.65rem;
-  }
 }
 button::before,
 .button::before {
@@ -200,6 +192,16 @@ button:hover::before,
     width: 85%;
     font-size: 1.1565rem;
     margin: 1.5rem auto 2rem;
+  }
+}
+.intro__text .button {
+  font-size: 0.85rem;
+  padding: 0.85rem 5.25rem;
+}
+@media (min-width: 40em) {
+  .intro__text .button {
+    font-size: 0.95rem;
+    padding: 0.95rem 5.65rem;
   }
 }
 
@@ -406,4 +408,83 @@ button:hover::before,
 .testimonials .testimonial__card .profile .info span:last-child {
   font-size: 0.5rem;
   letter-spacing: 1px;
+}
+
+.early-access {
+  position: relative;
+  background: hsl(218deg, 28%, 13%);
+  padding: 0.5rem 1.25rem;
+}
+@media (min-width: 40em) {
+  .early-access {
+    padding: 3.25rem 0;
+  }
+}
+.early-access::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: hsl(216deg, 53%, 9%);
+}
+@media (min-width: 40em) {
+  .early-access::after {
+    height: 45%;
+  }
+}
+.early-access__content {
+  z-index: 2;
+  max-width: 50rem;
+  position: inherit;
+  text-align: center;
+  border-radius: 0.5rem;
+  background: hsl(217deg, 28%, 15%);
+  padding: 1.85rem 1.5rem 2.25rem;
+  box-shadow: 0.5rem 0.5rem 0.8rem rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 40em) {
+  .early-access__content {
+    padding: 2.5rem 4.5rem 2.25rem;
+  }
+}
+.early-access__content h1 {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+@media (min-width: 40em) {
+  .early-access__content h1 {
+    font-size: 1.875rem;
+  }
+}
+.early-access__content p {
+  margin: 1rem 0 2rem;
+  font-size: 0.825rem;
+}
+@media (min-width: 40em) {
+  .early-access__content p {
+    font-size: 0.85rem;
+  }
+}
+.early-access__content form {
+  grid-template-columns: 1fr;
+  gap: 1.5rem 1.75rem;
+}
+@media (min-width: 40em) {
+  .early-access__content form {
+    grid-template-columns: 1fr auto;
+  }
+}
+.early-access__content form input {
+  outline: 0;
+  font-family: inherit;
+  padding: 0.75rem 2rem;
+  border-radius: 3.125rem;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+.early-access__content form .button {
+  font-size: 0.85rem;
+  padding: 0.875rem 1.75rem;
 }/*# sourceMappingURL=style.css.map */

@@ -47,5 +47,15 @@
         margin: 1.5rem auto 2rem;
       }
     }
+
+    .button {
+      font-size: 0.85rem;
+      padding: 0.85rem 5.25rem;
+
+      @include breakpoint-up(medium) {
+        font-size: 0.95rem;
+        padding: 0.95rem 5.65rem;
+      }
+    }
   }
 }
