@@ -437,6 +437,7 @@ button:hover::before,
 }
 .early-access__content {
   z-index: 2;
+  margin: 0 auto;
   max-width: 50rem;
   position: inherit;
   text-align: center;
@@ -487,4 +488,107 @@ button:hover::before,
 .early-access__content form .button {
   font-size: 0.85rem;
   padding: 0.875rem 1.75rem;
+}
+
+.footer {
+  color: hsl(0deg, 0%, 100%);
+  padding: 4.5rem 0;
+  font-size: 0.9375rem;
+  background: hsl(216deg, 53%, 9%);
+}
+@media (min-width: 64em) {
+  .footer {
+    padding: 2.5rem 0 4.5rem;
+  }
+}
+.footer__logo {
+  width: 10.25rem;
+  margin-bottom: 2rem;
+}
+.footer__content {
+  grid-template-columns: 1fr;
+  row-gap: 4rem;
+}
+@media (min-width: 64em) {
+  .footer__content {
+    grid-template-columns: 4.5fr repeat(3, 1fr);
+  }
+}
+.footer__address {
+  grid-template-columns: 1fr;
+}
+@media (min-width: 64em) {
+  .footer__address {
+    grid-template-columns: 1.5fr 1fr;
+  }
+}
+.footer__desc:first-child {
+  margin-bottom: 1rem;
+}
+.footer__desc img {
+  width: 1rem;
+  margin-right: 1rem;
+}
+@media (min-width: 64em) {
+  .footer__desc img {
+    width: auto;
+  }
+}
+.footer__desc p {
+  width: auto;
+}
+@media (min-width: 64em) {
+  .footer__desc p {
+    width: 70%;
+  }
+}
+.footer__links {
+  align-items: baseline;
+  flex-direction: column;
+}
+.footer__links a {
+  color: hsl(0deg, 0%, 100%);
+  transition: all 300ms ease-in-out;
+}
+.footer__links a:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer__links a:hover {
+  font-weight: bold;
+}
+.footer__social {
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 64em) {
+  .footer__social {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+}
+.footer__social a i {
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  transition: all 300ms ease-in-out;
+}
+.footer__social a i:hover {
+  color: hsl(176deg, 68%, 64%);
+  border: 1px solid hsl(176deg, 68%, 64%);
+}
+.footer__social a:not(:last-child) {
+  margin-right: 1rem;
+}
+.footer .attribution {
+  text-align: center;
+  font-size: 0.875rem;
+  margin-top: 3.75rem;
+}
+.footer .attribution a {
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */

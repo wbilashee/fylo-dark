@@ -1,0 +1,116 @@
+.footer {
+  color: $white;
+  padding: 4.5rem 0;
+  font-size: 0.9375rem;
+  background: $footerBlue;
+
+  @include breakpoint-up(large) {
+    padding: 2.5rem 0 4.5rem;
+  }
+
+  &__logo {
+    width: 10.25rem;
+    margin-bottom: 2rem;
+  }
+
+  &__content {
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: 4.5fr repeat(3, 1fr);
+    }
+  }
+
+  &__address {
+    grid-template-columns: 1fr;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: 1.5fr 1fr;
+    }
+  }
+
+  &__desc {
+    &:first-child {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      width: 1rem;
+      margin-right: 1rem;
+
+      @include breakpoint-up(large) {
+        width: auto;
+      }
+    }
+
+    p {
+      width: auto;
+
+      @include breakpoint-up(large) {
+        width: 70%;
+      }
+    }
+  }
+
+  &__links {
+    align-items: baseline;
+    flex-direction: column;
+
+    a {
+      color: $white;
+      transition: all 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__social {
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint-up(large) {
+      align-items: baseline;
+      justify-content: flex-start;
+    }
+
+    a {
+      i {
+        color: $white;
+        display: flex;
+        width: 2.25rem;
+        height: 2.25rem;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $white;
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          color: $cyan;
+          border: 1px solid $cyan;
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  .attribution {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-top: 3.75rem;
+
+    a {
+      color: $white;
+    }
+  }
+}
