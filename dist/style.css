@@ -484,7 +484,7 @@ button:hover::before,
 }
 @media (min-width: 40em) {
   .early-access__content {
-    padding: 2.5rem 4.5rem 2.25rem;
+    padding: 2.5rem 4.5rem;
   }
 }
 .early-access__content h1 {
@@ -496,16 +496,17 @@ button:hover::before,
     font-size: 1.875rem;
   }
 }
-.early-access__content p {
+.early-access__content p:not(.error) {
   margin: 1rem 0 2rem;
   font-size: 0.825rem;
 }
 @media (min-width: 40em) {
-  .early-access__content p {
+  .early-access__content p:not(.error) {
     font-size: 0.85rem;
   }
 }
 .early-access__content form {
+  position: relative;
   grid-template-columns: 1fr;
   gap: 1.5rem 1.75rem;
 }
@@ -520,6 +521,23 @@ button:hover::before,
   padding: 0.75rem 2rem;
   border-radius: 3.125rem;
   border: 1px solid hsl(0deg, 0%, 100%);
+}
+.early-access__content form input.invalid {
+  border: 1px solid hsl(0deg, 100%, 63%);
+}
+.early-access__content form .error {
+  position: absolute;
+  left: 2rem;
+  top: 2.85rem;
+  display: none;
+  color: hsl(0deg, 100%, 63%);
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+@media (min-width: 40em) {
+  .early-access__content form .error {
+    top: 3.15rem;
+  }
 }
 .early-access__content form .button {
   font-size: 0.85rem;
