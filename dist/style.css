@@ -322,4 +322,88 @@ button:hover::before,
 }
 .stay-productive__text a:hover svg use {
   fill: hsl(0deg, 0%, 100%);
+}
+
+.testimonials {
+  padding: 9rem 0;
+  background: hsl(218deg, 28%, 13%);
+}
+@media (min-width: 40em) {
+  .testimonials {
+    padding: 8rem 0;
+  }
+}
+.testimonials .container {
+  max-width: 71.15rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.9375rem;
+  grid-template-columns: 1fr;
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: 6.5%;
+  background-position-x: 3rem;
+  gap: 1.5rem 2.25rem;
+}
+@media (min-width: 40em) {
+  .testimonials .container {
+    padding-top: 2rem;
+    background-size: 4.5%;
+    background-position-x: 0.875rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.testimonials .testimonial__card {
+  border-radius: 0.4rem;
+  background: hsl(219deg, 30%, 18%);
+  padding: 1.5rem 1.25rem 1.25rem;
+}
+@media (min-width: 40em) {
+  .testimonials .testimonial__card {
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+}
+.testimonials .testimonial__card p {
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 1.75;
+  letter-spacing: 0.5px;
+}
+@media (min-width: 40em) {
+  .testimonials .testimonial__card p {
+    line-height: 1.5;
+    font-size: 0.8125rem;
+  }
+}
+.testimonials .testimonial__card .profile {
+  margin-top: 1.15rem;
+}
+.testimonials .testimonial__card .profile img {
+  width: 1.5rem;
+  border-radius: 50%;
+}
+@media (min-width: 40em) {
+  .testimonials .testimonial__card .profile img {
+    width: 1.75rem;
+  }
+}
+.testimonials .testimonial__card .profile .info {
+  margin-left: 0.5rem;
+}
+.testimonials .testimonial__card .profile .info span {
+  display: block;
+}
+.testimonials .testimonial__card .profile .info span:first-child {
+  font-weight: 600;
+  margin-bottom: 0;
+  font-size: 0.625rem;
+}
+@media (min-width: 40em) {
+  .testimonials .testimonial__card .profile .info span:first-child {
+    margin-bottom: 0.125rem;
+  }
+}
+.testimonials .testimonial__card .profile .info span:last-child {
+  font-size: 0.5rem;
+  letter-spacing: 1px;
 }/*# sourceMappingURL=style.css.map */

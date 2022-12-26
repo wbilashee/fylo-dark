@@ -1,0 +1,86 @@
+.testimonials {
+  padding: 9rem 0;
+  background: $mainBlue;
+
+  @include breakpoint-up(medium) {
+    padding: 8rem 0;
+  }
+
+  .container {
+    max-width: 71.15rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 0.9375rem;
+    grid-template-columns: 1fr;
+    background-image: url("../images/bg-quotes.png");
+    background-repeat: no-repeat;
+    background-size: 6.5%;
+    background-position-x: 3rem;
+    gap: 1.5rem 2.25rem;
+
+    @include breakpoint-up(medium) {
+      padding-top: 2rem;
+      background-size: 4.5%;
+      background-position-x: 0.875rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .testimonial__card {
+    border-radius: 0.4rem;
+    background: $testimonialBlue;
+    padding: 1.5rem 1.25rem 1.25rem;
+
+    @include breakpoint-up(medium) {
+      padding: 2.5rem 1.5rem 1.5rem;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 0.7rem;
+      line-height: 1.75;
+      letter-spacing: 0.5px;
+
+      @include breakpoint-up(medium) {
+        line-height: 1.5;
+        font-size: 0.8125rem;
+      }
+    }
+
+    .profile {
+      margin-top: 1.15rem;
+
+      img {
+        width: 1.5rem;
+        border-radius: 50%;
+
+        @include breakpoint-up(medium) {
+          width: 1.75rem;
+        }
+      }
+
+      .info {
+        margin-left: 0.5rem;
+
+        span {
+          display: block;
+
+          &:first-child {
+            font-weight: 600;
+            margin-bottom: 0;
+            font-size: 0.625rem;
+
+            @include breakpoint-up(medium) {
+              margin-bottom: 0.125rem;
+            }
+          }
+
+          &:last-child {
+            font-size: 0.5rem;
+            letter-spacing: 1px;
+          }
+        }
+      }
+    }
+  }
+}
